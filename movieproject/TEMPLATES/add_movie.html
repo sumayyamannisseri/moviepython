@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<img src="{{movie.img.url}}" width="250" height="250">
+<div>
+       <h5>{{movie.name}}</h5>
+       <h5>{{movie.desc}}</h5>
+       <h5>{{movie.year}}</h5>
+       <a class="btn btn-success" href="{% url 'movieapp:add_movie' movie.id %}">add</a>
+
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
